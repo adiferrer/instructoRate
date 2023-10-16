@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="backgroundColor">#8AB07F</color>
+    <color name="cardColor">#E7E7E7</color>
+    <color name="darkTextColor">#0D291F</color>
+    <color name="menuBackgroundColor">#2F6A54</color>
+    <color name="filledStarColor">#FFD700</color>
+</resources>

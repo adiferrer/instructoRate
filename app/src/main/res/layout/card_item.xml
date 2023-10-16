@@ -1,0 +1,75 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="@color/cardColor"
+    android:padding="16dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <!-- ImageView for user avatar -->
+        <ImageView
+            android:id="@+id/avatarImageView"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/avatar_placeholder" />
+
+        <!-- TextView for user name -->
+        <TextView
+            android:id="@+id/userName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:text="User342"
+            android:textColor="@color/darkTextColor"
+            android:textSize="16sp" />
+    </LinearLayout>
+
+    <!-- Horizontal line (divider) -->
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/darkTextColor"
+        android:layout_marginTop="8dp" />
+
+    <!-- TextView for professor name -->
+    <TextView
+        android:id="@+id/professorName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:gravity="center"
+        android:text="PROFESSOR NAME"
+        android:textColor="@color/darkTextColor"
+        android:textSize="30sp"
+        android:textStyle="bold" />
+
+    <!-- RatingBar -->
+    <RatingBar
+        android:id="@+id/ratingBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:numStars="5"
+        android:progressBackgroundTint="@color/white"
+        android:progressTint="@color/filledStarColor"
+        android:rating="2.5"
+        android:stepSize="0.5" />
+
+    <!-- TextView for review -->
+    <TextView
+        android:id="@+id/review"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:gravity="left"
+        android:text="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incidunt ut labore et dolore magna aliqua..."
+        android:textColor="@color/darkTextColor"
+        android:textSize="16sp" />
+</LinearLayout>
