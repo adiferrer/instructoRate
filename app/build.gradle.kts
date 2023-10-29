@@ -9,8 +9,8 @@ android {
 
     defaultConfig {
         applicationId = "com.example.instructorate"
-        minSdk = 18
-        targetSdk = 33
+        minSdk = 19
+        targetSdk = 34
         versionCode = 1
         versionName = "1.0"
 

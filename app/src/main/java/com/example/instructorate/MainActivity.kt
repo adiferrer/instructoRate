@@ -11,17 +11,16 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-        val ucEmail = findViewById<EditText>(R.id.edit_uc_email)
-        val password = findViewById<EditText>(R.id.edit_password)
-        val btnLogin = findViewById<Button>(R.id.login_btn)
+        val studentStartBtn = findViewById<Button>(R.id.student_start)
+        studentStartBtn.setOnClickListener {
+            val intent = Intent(this, StudentLogin::class.java)
+//            val msg = intent.putExtra("name", "Juan")
+            startActivity(intent)
+        }
 
-        btnLogin.setOnClickListener {
-            if(ucEmail.text.toString().equals("jds2023@uc-bcf.edu.ph") &&
-                password.text.toString().equals("jds2023")) {
-                val intent = Intent(this, Dashboard::class.java)
-                val msg = intent.putExtra("name", "Juan")
-                startActivity(intent)
-            }
+        val instructorStartBtn = findViewById<Button>(R.id.instructor_start)
+        instructorStartBtn.setOnClickListener {
+//            val intent = Intent(this, )
         }
     }
 }

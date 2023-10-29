@@ -22,7 +22,7 @@
 
         <!-- TextView for user name -->
         <TextView
-            android:id="@+id/userName"
+            android:id="@+id/usernameTextView"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginStart="8dp"
@@ -40,7 +40,7 @@
 
     <!-- TextView for professor name -->
     <TextView
-        android:id="@+id/professorName"
+        android:id="@+id/professorNameTextView"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="8dp"
@@ -64,7 +64,7 @@
 
     <!-- TextView for review -->
     <TextView
-        android:id="@+id/review"
+        android:id="@+id/reviewTextView"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="8dp"

@@ -1,0 +1,66 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="horizontal"
+    android:background="@color/menuBackgroundColor"
+    android:visibility="visible"
+
+    >
+
+        <!-- Home Icon -->
+        <ImageButton
+            android:id="@+id/dashboard_icon"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:background="#008AB07F"
+            android:padding="16dp"
+            android:src="@drawable/ic_home" />
+
+        <!-- List Icon -->
+        <ImageButton
+            android:id="@+id/student_reviews_icon"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:background="#00FFFFFF"
+            android:padding="16dp"
+            android:src="@drawable/ic_list" />
+
+        <!-- Add Button (Center) -->
+        <ImageButton
+            android:id="@+id/add_review_icon"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:background="#00FFFFFF"
+            android:padding="16dp"
+            android:src="@drawable/ic_add" />
+
+        <!-- Profile Icon -->
+        <ImageButton
+            android:id="@+id/student_profile_icon"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:background="#00FFFFFF"
+            android:padding="16dp"
+            android:src="@drawable/ic_profile" />
+
+        <!-- Settings Icon -->
+        <ImageButton
+            android:id="@+id/student_settings_icon"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:background="#00FFFFFF"
+            android:padding="16dp"
+            android:src="@drawable/ic_gears" />
+
+</LinearLayout>
