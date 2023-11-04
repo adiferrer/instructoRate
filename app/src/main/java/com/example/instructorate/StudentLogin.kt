@@ -12,9 +12,9 @@ class StudentLogin : ComponentActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.student_login)
 
-        val ucEmail = findViewById<EditText>(R.id.edit_uc_email)
-        val password = findViewById<EditText>(R.id.edit_password)
-        val btnLogin = findViewById<Button>(R.id.login_btn)
+        val ucEmail = findViewById<EditText>(R.id.student_edit_uc_email)
+        val password = findViewById<EditText>(R.id.student_edit_password)
+        val btnLogin = findViewById<Button>(R.id.student_login_btn)
 
         btnLogin.setOnClickListener {
             if(ucEmail.text.toString().equals("jds2023@uc-bcf.edu.ph") &&

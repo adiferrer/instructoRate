@@ -21,7 +21,17 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        
+
+        <activity
+            android:name=".StudentLogin"
+            android:exported="true"
+            tools:ignore="IntentFilterExportedReceiver">
+        <intent-filter>
+            <action android:name="android.intent.action.VIEW"></action>
+            <category android:name="android.intent.category.DEFAULT"></category>
+        </intent-filter>
+        </activity>
+
         <activity
             android:name=".StudentDashboard"
             android:exported="true"
@@ -33,13 +43,23 @@
         </activity>
 
         <activity
-            android:name=".StudentLogin"
+            android:name=".InstructorLogin"
             android:exported="true"
             tools:ignore="IntentFilterExportedReceiver">
-        <intent-filter>
-            <action android:name="android.intent.action.VIEW"></action>
-            <category android:name="android.intent.category.DEFAULT"></category>
-        </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"></action>
+                <category android:name="android.intent.category.DEFAULT"></category>
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name=".InstructorDashboard"
+            android:exported="true"
+            tools:ignore="IntentFilterExportedReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"></action>
+                <category android:name="android.intent.category.DEFAULT"></category>
+            </intent-filter>
         </activity>
     </application>
 

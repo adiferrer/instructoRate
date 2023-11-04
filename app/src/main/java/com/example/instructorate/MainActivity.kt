@@ -13,14 +13,14 @@ class MainActivity : AppCompatActivity() {
 
         val studentStartBtn = findViewById<Button>(R.id.student_start)
         studentStartBtn.setOnClickListener {
-            val intent = Intent(this, StudentLogin::class.java)
-//            val msg = intent.putExtra("name", "Juan")
-            startActivity(intent)
+            val studentLoginIntent = Intent(this, StudentLogin::class.java)
+            startActivity(studentLoginIntent)
         }
 
         val instructorStartBtn = findViewById<Button>(R.id.instructor_start)
         instructorStartBtn.setOnClickListener {
-//            val intent = Intent(this, )
+            val instructorLoginIntent = Intent(this, InstructorLogin::class.java)
+            startActivity(instructorLoginIntent)
         }
     }
 }

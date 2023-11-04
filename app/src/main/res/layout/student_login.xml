@@ -7,7 +7,6 @@
     android:background="@drawable/login_background_image"
     tools:context=".MainActivity">
 
-    <!-- add student and instructor views -->
     <TextView
         android:id="@+id/textView2"
         android:layout_width="wrap_content"
@@ -31,7 +30,7 @@
         app:srcCompat="@drawable/logo_instructorate" />
 
     <EditText
-        android:id="@+id/edit_uc_email"
+        android:id="@+id/student_edit_uc_email"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:ems="10"
@@ -47,7 +46,7 @@
         app:layout_constraintVertical_bias="0.537" />
 
     <EditText
-        android:id="@+id/edit_password"
+        android:id="@+id/student_edit_password"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:ems="10"
@@ -62,7 +61,7 @@
         app:layout_constraintVertical_bias="0.603" />
 
     <Button
-        android:id="@+id/login_btn"
+        android:id="@+id/student_login_btn"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:background="@drawable/round_button"
