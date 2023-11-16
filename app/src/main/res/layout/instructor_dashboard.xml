@@ -132,7 +132,8 @@
                         android:progressBackgroundTint="@color/white"
                         android:progressTint="@color/filledStarColor"
                         android:rating="2.5"
-                        android:stepSize="0.5" />
+                        android:stepSize="0.5"
+                        android:isIndicator="true" />
 
                     <!-- TextView for review text -->
                     <TextView

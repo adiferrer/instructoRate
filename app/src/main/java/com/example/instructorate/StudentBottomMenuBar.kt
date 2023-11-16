@@ -1,6 +1,7 @@
 package com.example.instructorate
 import android.content.Context
 import android.util.AttributeSet
+import android.widget.ImageButton
 import android.widget.LinearLayout
 
 class StudentBottomMenuBar @JvmOverloads constructor(
@@ -8,18 +9,19 @@ class StudentBottomMenuBar @JvmOverloads constructor(
 ) : LinearLayout(context, attrs, defStyleAttr) {
 
     init {
-        inflate(context, R.layout.bottom_menu_bar, this)
+        inflate(context, R.layout.student_bottom_menu_bar, this)
 
-        // Find and set click listeners for your ImageButtons
-//        val button1 = findViewById<ImageButton>(R.id.button1)
-//        val button2 = findViewById<ImageButton>(R.id.button2)
-//
-//        button1.setOnClickListener {
-//            // Handle button1 click
-//        }
-//
-//        button2.setOnClickListener {
-//            // Handle button2 click
-//        }
+//         Find and set click listeners for your ImageButtons
+        val dashboardBtn = findViewById<ImageButton>(R.id.dashboard_icon)
+        val studentReviewsBtn = findViewById<ImageButton>(R.id.student_reviews_icon)
+
+        dashboardBtn.setOnClickListener {
+//            val intent = Intent(this, InstructorDashboard::class.java)
+
+        }
+
+        studentReviewsBtn.setOnClickListener {
+            // Handle button2 click
+        }
     }
 }
