@@ -4,12 +4,12 @@ import android.util.AttributeSet
 import android.widget.ImageButton
 import android.widget.LinearLayout
 
-class StudentBottomMenuBar @JvmOverloads constructor(
+class InstructorBottomMenuBar @JvmOverloads constructor(
     context: Context, attrs: AttributeSet? = null, defStyleAttr: Int = 0
 ) : LinearLayout(context, attrs, defStyleAttr) {
 
     init {
-        inflate(context, R.layout.student_bottom_menu_bar, this)
+        inflate(context, R.layout.instructor_bottom_menu_bar, this)
 
 ////         Find and set click listeners for your ImageButtons
 //        val dashboardBtn = findViewById<ImageButton>(R.id.dashboard_icon)

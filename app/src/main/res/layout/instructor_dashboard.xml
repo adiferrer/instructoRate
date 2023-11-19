@@ -4,13 +4,17 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/backgroundColor">
+    android:background="@color/white">
 
     <!-- Content Scroll View -->
+
     <androidx.core.widget.NestedScrollView
+        android:id="@+id/nestedScrollView"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+        app:layout_behavior="@string/appbar_scrolling_view_behavior"
+        tools:layout_editor_absoluteX="-29dp"
+        tools:layout_editor_absoluteY="-119dp">
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -24,7 +28,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="30dp"
                 android:text="Hi, Maria!"
-                android:textColor="@color/white"
+                android:textColor="@color/darkTextColor"
                 android:textSize="50sp"
                 android:textStyle="bold"
                 app:layout_constraintBottom_toBottomOf="parent"
@@ -35,21 +39,6 @@
                 app:layout_constraintVertical_bias="0.053" />
 
             <!-- Greeting Subtitle -->
-            <TextView
-                android:id="@+id/welcomeMsgSubtitle"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="30dp"
-                android:text="View your ratings and reviews regarding your performance."
-                android:textColor="@color/white"
-                android:textSize="20sp"
-                app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.456"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent"
-                app:layout_constraintVertical_bias="0.159"
-                tools:ignore="MissingConstraints" />
 
             <!-- Card View 1 -->
             <androidx.cardview.widget.CardView
@@ -128,12 +117,12 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_gravity="center"
+                        android:isIndicator="true"
                         android:numStars="5"
                         android:progressBackgroundTint="@color/white"
                         android:progressTint="@color/filledStarColor"
                         android:rating="2.5"
-                        android:stepSize="0.5"
-                        android:isIndicator="true" />
+                        android:stepSize="0.5" />
 
                     <!-- TextView for review text -->
                     <TextView
@@ -153,12 +142,14 @@
         </LinearLayout>
     </androidx.core.widget.NestedScrollView>
 
-    <com.example.instructorate.StudentBottomMenuBar
-        android:layout_width="match_parent"
+    <com.example.instructorate.InstructorBottomMenuBar
+        android:id="@+id/instructor_bottom_menu_bar"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
-        tools:ignore="MissingConstraints"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent">
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="MissingConstraints">
 
-    </com.example.instructorate.StudentBottomMenuBar>
+    </com.example.instructorate.InstructorBottomMenuBar>
 </androidx.constraintlayout.widget.ConstraintLayout>

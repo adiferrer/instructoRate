@@ -154,11 +154,12 @@
     </androidx.core.widget.NestedScrollView>
 
     <com.example.instructorate.StudentBottomMenuBar
-        android:layout_width="match_parent"
+        android:id="@+id/student_bottom_menu_bar"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
-        tools:ignore="MissingConstraints"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent">
-
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="MissingConstraints">
     </com.example.instructorate.StudentBottomMenuBar>
 </androidx.constraintlayout.widget.ConstraintLayout>
