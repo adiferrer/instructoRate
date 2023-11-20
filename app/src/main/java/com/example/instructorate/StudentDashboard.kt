@@ -13,9 +13,9 @@ class StudentDashboard : ComponentActivity() {
         setContentView(R.layout.student_dashboard)
 
         val textview = findViewById<TextView>(R.id.welcomeMsg)
-        val intent = getIntent()
+        val intent = intent
         val msg = intent.getStringExtra("name")
-        textview.setText("Hi, " + msg + "!")
+        textview.text = "Hi, " + msg + "!"
 
         // Assuming you have a list of user reviews called "userReviews"
         val userReviews = mutableListOf(

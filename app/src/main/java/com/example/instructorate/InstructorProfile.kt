@@ -1,4 +1,3 @@
 package com.example.instructorate
 
-class InstructorProfile {
-}
+class InstructorProfile

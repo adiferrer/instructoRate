@@ -3,6 +3,4 @@ data class UserReview(
     val professorName: String,
     val rating: Double,
     val reviewText: String
-) {
-
-}
+)

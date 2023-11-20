@@ -1,11 +1,300 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:background="@color/backgroundColor"
     tools:ignore="MissingDefaultResource">
+
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView1"
+        android:layout_width="353dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_margin="8dp"
+        android:background="@color/cardColor"
+        app:cardBackgroundColor="@color/cardColor"
+        app:cardCornerRadius="17dp"
+        app:cardElevation="2dp"
+        app:cardUseCompatPadding="true"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.227"
+        tools:ignore="MissingConstraints">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/cardColor"
+            android:orientation="vertical"
+            android:padding="16dp"
+            tools:ignore="MissingConstraints">
+
+            <!-- Linear Layout for user avatar and message (horizontal) -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <!-- ImageView for user avatar -->
+                <ImageView
+                    android:id="@+id/avatarImageView"
+                    android:layout_width="48dp"
+                    android:layout_height="48dp"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/avatar_placeholder" />
+
+                <!-- TextView for message -->
+                <TextView
+                    android:id="@+id/usernameTextView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:text="Make A Great Review!"
+                    android:textColor="@color/darkTextColor"
+                    android:textSize="16sp" />
+            </LinearLayout>
+
+            <!-- Horizontal line (divider) -->
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="8dp"
+                android:background="@color/darkTextColor" />
+
+            <!-- Label and Input box for Course  -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:gravity="center_vertical"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/courseLabel"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Course:"
+                    android:textColor="@color/darkTextColor"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+                <Spinner
+                    android:id="@+id/spinner"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:entries="@array/student_courses"
+                    android:textSize="16sp" />
+            </LinearLayout>
+
+            <!-- Label and Input box for Instructor  -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:gravity="center_vertical"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/instructorLabel"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Instructor:"
+                    android:textColor="@color/darkTextColor"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+                <EditText
+                    android:id="@+id/course_instructor"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:inputType="text"
+                    android:text="Name of Instructor"
+                    android:textColor="@color/darkTextColor"
+                    android:textSize="16sp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.502"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="0.603" />
+            </LinearLayout>
+
+            <!-- Review text field -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:gravity="center_vertical"
+                android:orientation="vertical">
+
+                <EditText
+                    android:id="@+id/review_text"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Enter text here"
+                    android:inputType="text" />
+
+                <TextView
+                    android:id="@+id/character_indicator"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="end"
+                    android:text="0/60 characters"
+                    android:textColor="@color/darkTextColor"
+                    android:textSize="16sp" />
+            </LinearLayout>
+
+            <!-- Series of Star Reviews -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:gravity="center_vertical"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/star_review_label"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Star Review:"
+                    android:textColor="@color/darkTextColor"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+                <!-- Curriculum Relevance -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/curriculum_relevance"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Curriculum Relevance"
+                        android:textColor="@color/darkTextColor"
+                        android:textSize="16dp"
+                        android:textStyle="bold" />
+
+                    <RatingBar
+                        android:id="@+id/ratingBar_curriculum_relevance"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:numStars="5"
+                        android:progressBackgroundTint="@color/white"
+                        android:progressTint="@color/filledStarColor"
+                        android:rating="2.5"
+                        android:scaleX="0.5"
+                        android:scaleY="0.5"
+                        android:stepSize="0.5" />
+                </LinearLayout>
+
+                <!-- Teaching Style -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/teaching_style"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Teaching Style"
+                        android:textColor="@color/darkTextColor"
+                        android:textSize="16dp"
+                        android:textStyle="bold" />
+
+                    <RatingBar
+                        android:id="@+id/ratingBar_teaching_style"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:numStars="5"
+                        android:progressBackgroundTint="@color/white"
+                        android:progressTint="@color/filledStarColor"
+                        android:rating="2.5"
+                        android:scaleX="0.5"
+                        android:scaleY="0.5"
+                        android:stepSize="0.5" />
+                </LinearLayout>
+
+                <!-- Consideration to Students -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/consideration_to_students"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Consideration to Students"
+                        android:textColor="@color/darkTextColor"
+                        android:textSize="16dp"
+                        android:textStyle="bold" />
+
+                    <RatingBar
+                        android:id="@+id/ratingBar_consideration_to_students"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:numStars="5"
+                        android:progressBackgroundTint="@color/white"
+                        android:progressTint="@color/filledStarColor"
+                        android:rating="2.5"
+                        android:scaleX="0.5"
+                        android:scaleY="0.5"
+                        android:stepSize="0.5" />
+                </LinearLayout>
+
+                <!-- Overall Performance -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/overall_performance"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Overall Performance"
+                        android:textColor="@color/darkTextColor"
+                        android:textSize="16dp"
+                        android:textStyle="bold" />
+
+                    <RatingBar
+                        android:id="@+id/ratingBar_overall_performance"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:numStars="5"
+                        android:progressBackgroundTint="@color/white"
+                        android:progressTint="@color/filledStarColor"
+                        android:rating="2.5"
+                        android:scaleX="0.5"
+                        android:scaleY="0.5"
+                        android:stepSize="0.5" />
+                </LinearLayout>
+            </LinearLayout>
+
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
 
     <com.example.instructorate.StudentBottomMenuBar
         android:id="@+id/student_bottom_menu_bar"
@@ -14,7 +303,6 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        tools:ignore="MissingConstraints">
-    </com.example.instructorate.StudentBottomMenuBar>
+        tools:ignore="MissingConstraints"></com.example.instructorate.StudentBottomMenuBar>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
