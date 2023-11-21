@@ -5,12 +5,11 @@
     android:orientation="horizontal"
     android:background="@color/menuBackgroundColor"
     android:visibility="visible"
-
     >
 
         <!-- Home Icon -->
         <ImageButton
-            android:id="@+id/dashboard_icon"
+            android:id="@+id/student_dashboard_icon"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_gravity="center"

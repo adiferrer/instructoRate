@@ -49,33 +49,37 @@
     <EditText
         android:id="@+id/student_edit_uc_email"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_height="40sp"
+        android:background="@drawable/rounded_rectangle"
         android:ems="10"
         android:hint="UC Email"
         android:inputType="textEmailAddress"
+        android:paddingStart="8dp"
         android:singleLine="false"
         android:textColor="@color/darkTextColor"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.502"
+        app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.537" />
+        app:layout_constraintVertical_bias="0.499" />
 
     <EditText
         android:id="@+id/student_edit_password"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_height="40sp"
+        android:background="@drawable/rounded_rectangle"
         android:ems="10"
         android:hint="Password"
         android:inputType="textPassword"
+        android:paddingStart="8dp"
         android:textColor="@color/darkTextColor"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.502"
+        app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.603" />
+        app:layout_constraintVertical_bias="0.578" />
 
     <Button
         android:id="@+id/student_login_btn"
@@ -89,8 +93,9 @@
         app:backgroundTint="#87AA7C"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.682" />
+        app:layout_constraintVertical_bias="0.679" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

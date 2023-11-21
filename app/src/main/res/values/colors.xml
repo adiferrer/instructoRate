@@ -4,6 +4,7 @@
     <color name="white">#FFFFFFFF</color>
     <color name="backgroundColor">#8AB07F</color>
     <color name="cardColor">#E7E7E7</color>
+    <color name="inputBoxColor">#AFAFAF</color>
     <color name="darkTextColor">#0D291F</color>
     <color name="menuBackgroundColor">#2F6A54</color>
     <color name="filledStarColor">#FFD700</color>
