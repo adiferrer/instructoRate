@@ -2,9 +2,9 @@
 <resources>
     <array name="student_courses">
         <item>Choose a course</item>
-        <item>Item 1</item>
-        <item>Item 2</item>
-        <item>Item 3</item>
+        <item>CC17</item>
+        <item>CC16</item>
+        <item>CC18</item>
         <!-- Add more items as needed -->
     </array>
 </resources>
