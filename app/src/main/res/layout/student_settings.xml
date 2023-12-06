@@ -15,16 +15,27 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="vertical">
+            android:orientation="vertical"
+            android:layout_margin="10dp"
+            >
 
-           <Button
-               android:layout_width="wrap_content"
-               android:layout_height="wrap_content"
-               android:text="Logout"
-               android:background="@drawable/rounded_rectangle"
-               android:backgroundTint="@color/cardColor">
-
-           </Button>
+            <Button
+                android:id="@+id/student_logout_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:background="@drawable/rounded_button_secondary"
+                android:elevation="4dp"
+                android:text="LOG OUT"
+                android:textColor="@color/darkTextColor"
+                android:textStyle="bold"
+                app:backgroundTint="#E7E7E7"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.498"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.679" />
 
         </LinearLayout>
     </androidx.core.widget.NestedScrollView>
@@ -38,4 +49,10 @@
         app:layout_constraintStart_toStartOf="parent"
         tools:ignore="MissingConstraints">
     </com.example.instructorate.StudentBottomMenuBar>
+
+    <include layout="@layout/loading_layout"
+        android:id="@+id/loadingLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone" />
 </androidx.constraintlayout.widget.ConstraintLayout>

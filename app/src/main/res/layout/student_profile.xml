@@ -4,7 +4,8 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    tools:ignore="MissingDefaultResource">
+    tools:ignore="MissingDefaultResource"
+    android:background="@color/backgroundColor">
 
     <com.example.instructorate.StudentBottomMenuBar
         android:id="@+id/student_bottom_menu_bar"

@@ -16,6 +16,8 @@ class StudentBottomMenuBar @JvmOverloads constructor(
         val dashboardBtn = findViewById<ImageButton>(R.id.student_dashboard_icon)
         val studentReviewsBtn = findViewById<ImageButton>(R.id.student_reviews_icon)
         val studentAddReviewBtn = findViewById<ImageButton>(R.id.add_review_icon)
+        val studentProfileBtn = findViewById<ImageButton>(R.id.student_profile_icon)
+        val studentSettingsBtn = findViewById<ImageButton>(R.id.student_settings_icon)
 
         dashboardBtn.setOnClickListener {
             val intent = Intent(context, StudentDashboard::class.java)
@@ -30,6 +32,16 @@ class StudentBottomMenuBar @JvmOverloads constructor(
 
         studentAddReviewBtn.setOnClickListener {
             val intent = Intent(context, MakeAReview::class.java)
+            context.startActivity(intent)
+        }
+
+        studentProfileBtn.setOnClickListener {
+            val intent = Intent(context, StudentProfile::class.java)
+            context.startActivity(intent)
+        }
+
+        studentSettingsBtn.setOnClickListener {
+            val intent = Intent(context, StudentSettings::class.java)
             context.startActivity(intent)
         }
     }
