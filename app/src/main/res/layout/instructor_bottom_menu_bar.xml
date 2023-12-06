@@ -10,7 +10,7 @@
 
         <!-- List Icon -->
         <ImageButton
-            android:id="@+id/student_reviews_icon"
+            android:id="@+id/instructor_list_icon"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
@@ -21,7 +21,7 @@
 
         <!-- Home Icon -->
         <ImageButton
-            android:id="@+id/dashboard_icon"
+            android:id="@+id/instructor_dashboard_icon"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
@@ -32,7 +32,7 @@
 
         <!-- Settings Icon -->
         <ImageButton
-            android:id="@+id/student_settings_icon"
+            android:id="@+id/instructor_settings_icon"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_gravity="center"

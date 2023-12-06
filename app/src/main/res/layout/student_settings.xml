@@ -50,7 +50,7 @@
         tools:ignore="MissingConstraints">
     </com.example.instructorate.StudentBottomMenuBar>
 
-    <include layout="@layout/loading_layout"
+    <include layout="@layout/student_loading_layout"
         android:id="@+id/loadingLayout"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
