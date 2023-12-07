@@ -6,48 +6,65 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     tools:ignore="MissingDefaultResource">
 
-    <!-- Content Scroll View -->
     <androidx.core.widget.NestedScrollView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+        app:layout_behavior="@string/appbar_scrolling_view_behavior"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="0dp">
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="vertical"
+            android:layout_gravity="center"
             android:layout_margin="10dp"
-            >
+            android:orientation="vertical">
 
-<!--            <Button-->
-<!--                android:id="@+id/instructor_report_btn"-->
-<!--                android:layout_width="wrap_content"-->
-<!--                android:layout_height="wrap_content"-->
-<!--                android:layout_gravity="center"-->
-<!--                android:background="@drawable/rounded_button_secondary"-->
-<!--                android:elevation="4dp"-->
-<!--                android:text="LOG OUT"-->
-<!--                android:textColor="@color/darkTextColor"-->
-<!--                android:textStyle="bold"-->
-<!--                app:backgroundTint="#E7E7E7"-->
-<!--                app:layout_constraintBottom_toBottomOf="parent"-->
-<!--                app:layout_constraintEnd_toEndOf="parent"-->
-<!--                app:layout_constraintHorizontal_bias="0.498"-->
-<!--                app:layout_constraintStart_toStartOf="parent"-->
-<!--                app:layout_constraintTop_toTopOf="parent"-->
-<!--                app:layout_constraintVertical_bias="0.679" />-->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="SETTINGS"
+                android:textSize="20dp"
+                android:textStyle="bold"
+                android:textColor="@color/darkTextColor"></TextView>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="Change Password"
+                android:layout_marginTop="5dp"
+                android:textColor="@color/darkTextColor"></TextView>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="5dp"
+                android:text="Help"
+                android:textColor="@color/darkTextColor"></TextView>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="5dp"
+                android:text="Report a Problem"
+                android:textColor="@color/darkTextColor"></TextView>
 
             <Button
                 android:id="@+id/instructor_logout_btn"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
-                android:background="@drawable/rounded_button_secondary"
+                android:background="@drawable/round_button"
                 android:elevation="4dp"
+                android:layout_marginTop="10dp"
                 android:text="LOG OUT"
                 android:textColor="@color/darkTextColor"
                 android:textStyle="bold"
-                app:backgroundTint="#E7E7E7"
+                app:backgroundTint="#8AB07F"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintHorizontal_bias="0.498"
@@ -66,7 +83,6 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         tools:ignore="MissingConstraints">
-
     </com.example.instructorate.InstructorBottomMenuBar>
 
     <include layout="@layout/instructor_loading_layout"

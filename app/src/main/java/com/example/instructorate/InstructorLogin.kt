@@ -45,7 +45,7 @@ class InstructorLogin : ComponentActivity() {
 
     private fun startDashboardActivity(studentEmail: String) {
         val intent = Intent(this, InstructorDashboard::class.java)
-        val msg = intent.putExtra("name", "Maria")
+        val msg = intent.putExtra("name", "Maria San Jose")
         startActivity(intent)
         finish()
     }

@@ -7,23 +7,59 @@
     android:background="@color/backgroundColor">
 
     <!-- Content Scroll View -->
+
     <androidx.core.widget.NestedScrollView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        app:layout_behavior="@string/appbar_scrolling_view_behavior">
-
+        app:layout_behavior="@string/appbar_scrolling_view_behavior"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="0dp">
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="vertical"
+            android:layout_gravity="center"
             android:layout_margin="10dp"
-            >
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="SETTINGS"
+                android:textSize="20dp"
+                android:textStyle="bold"
+                android:textColor="@color/white"></TextView>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="Change Password"
+                android:layout_marginTop="5dp"
+                android:textColor="@color/white"></TextView>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="5dp"
+                android:text="Help"
+                android:textColor="@color/white"></TextView>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="5dp"
+                android:text="Report a Problem"
+                android:textColor="@color/white"></TextView>
 
             <Button
                 android:id="@+id/student_logout_btn"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
+                android:layout_marginTop="10dp"
                 android:background="@drawable/rounded_button_secondary"
                 android:elevation="4dp"
                 android:text="LOG OUT"

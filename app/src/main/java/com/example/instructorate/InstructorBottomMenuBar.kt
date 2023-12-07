@@ -19,7 +19,7 @@ class InstructorBottomMenuBar @JvmOverloads constructor(
 
         dashboardBtn.setOnClickListener {
             val intent = Intent(context, InstructorDashboard::class.java)
-            val msg = intent.putExtra("name", "Maria")
+            val msg = intent.putExtra("name", "Maria San Jose")
             context.startActivity(intent)
         }
 

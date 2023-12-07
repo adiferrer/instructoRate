@@ -12,22 +12,34 @@
         android:id="@+id/nestedScrollView"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+        app:layout_behavior="@string/appbar_scrolling_view_behavior"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="vertical">
 
-            <!-- Greeting -->
+            <ImageView
+                android:id="@+id/avatarImageView"
+                android:layout_width="200dp"
+                android:layout_height="200dp"
+                android:layout_gravity="center"
+                android:scaleType="centerCrop"
+                android:src="@drawable/avatar_placeholder"
+                tools:ignore="DuplicateIds" />
+
+            <!-- Professor Name -->
             <TextView
                 android:id="@+id/welcomeMsg"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginLeft="30dp"
-                android:text="Hi, Maria!"
+                android:gravity="center"
+                android:text="Prof. Maria San Jose"
                 android:textColor="@color/darkTextColor"
-                android:textSize="50sp"
+                android:textSize="30sp"
                 android:textStyle="bold"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
@@ -36,13 +48,11 @@
                 app:layout_constraintTop_toTopOf="parent"
                 app:layout_constraintVertical_bias="0.053" />
 
-            <!-- Greeting Subtitle -->
-
-            <!-- Card View 1 -->
+            <!-- Rating View -->
             <androidx.cardview.widget.CardView
                 android:id="@+id/cardView1"
                 android:layout_width="355dp"
-                android:layout_height="267dp"
+                android:layout_height="wrap_content"
                 android:layout_gravity="center"
                 android:layout_margin="8dp"
                 app:cardCornerRadius="17dp"
@@ -63,77 +73,30 @@
                     android:padding="16dp">
 
                     <LinearLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:gravity="center_vertical"
-                        android:orientation="horizontal">
-
-                        <!-- ImageView for avatar placeholder -->
-                        <ImageView
-                            android:id="@+id/avatarImageView"
-                            android:layout_width="48dp"
-                            android:layout_height="48dp"
-                            android:scaleType="centerCrop"
-                            android:src="@drawable/avatar_placeholder"
-                            tools:ignore="DuplicateIds" />
-
-                        <!-- TextView for user name -->
-                        <TextView
-                            android:id="@+id/userName"
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:layout_marginStart="8dp"
-                            android:text="User342"
-                            android:textColor="@color/darkTextColor"
-                            android:textSize="16sp"
-                            tools:ignore="DuplicateIds" />
-                    </LinearLayout>
-
-                    <!-- Horizontal divider -->
-                    <View
-                        android:layout_width="match_parent"
-                        android:layout_height="1dp"
-                        android:layout_marginTop="8dp"
-                        android:background="@color/darkTextColor" />
-
-                    <!-- Professor name -->
-                    <TextView
-                        android:id="@+id/professorName"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_marginTop="8dp"
-                        android:gravity="center"
-                        android:text="PROFESSOR NAME"
-                        android:textColor="@color/darkTextColor"
-                        android:textSize="30sp"
-                        android:textStyle="bold"
-                        tools:ignore="DuplicateIds" />
-
-                    <!-- Rating Bar for rating -->
-                    <RatingBar
-                        android:id="@+id/ratingBar1"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:layout_gravity="center"
-                        android:isIndicator="true"
-                        android:numStars="5"
-                        android:progressBackgroundTint="@color/white"
-                        android:progressTint="@color/filledStarColor"
-                        android:rating="2.5"
-                        android:stepSize="0.5" />
+                        android:orientation="vertical"
+                        android:layout_gravity="center">
 
-                    <!-- TextView for review text -->
-                    <TextView
-                        android:id="@+id/review"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_gravity="left"
-                        android:layout_marginTop="8dp"
-                        android:gravity="left"
-                        android:text="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incidunt ut labore et dolore magna aliqua..."
-                        android:textColor="@color/darkTextColor"
-                        android:textSize="12sp"
-                        tools:ignore="DuplicateIds" />
+                        <ImageView
+                            android:id="@+id/star_image"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/star"
+                            android:layout_gravity="center"
+                            app:layout_constraintTop_toTopOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintEnd_toEndOf="parent" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:textColor="@color/darkTextColor"
+                            android:textStyle="bold"
+                            android:text="Average Rating: 3.5">
+                        </TextView>
+                    </LinearLayout>
                 </LinearLayout>
             </androidx.cardview.widget.CardView>
 

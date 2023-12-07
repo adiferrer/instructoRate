@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:padding="16dp"
+    android:background="@drawable/student_dialog_background">
+
+    <ImageView
+        android:id="@+id/dialogIcon"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:src="@drawable/avatar_placeholder"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp"/>
+
+    <TextView
+        android:id="@+id/welcomeMessage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Hi, Guest!"
+        android:textSize="18sp"
+        android:textColor="@color/darkTextColor"
+        android:textStyle="bold"
+        android:layout_below="@id/dialogIcon"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="8dp"/>
+
+    <TextView
+        android:id="@+id/dialogMessage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="Are you ready to write a review for your instructors?"
+        android:textSize="14sp"
+        android:textColor="@color/darkTextColor"
+        android:layout_below="@id/welcomeMessage"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="8dp"/>
+
+    <Button
+        android:id="@+id/yesButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Yes!"
+        android:layout_below="@id/dialogMessage"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/round_button"/>
+</RelativeLayout>

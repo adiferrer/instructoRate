@@ -1,10 +1,11 @@
 package com.example.instructorate
 
-import UserReview
 import android.os.Bundle
-import android.widget.ImageView
+import android.view.Gravity
+import android.widget.Button
 import android.widget.TextView
 import androidx.activity.ComponentActivity
+import androidx.appcompat.app.AlertDialog
 
 
 class InstructorDashboard : ComponentActivity() {
@@ -15,30 +16,34 @@ class InstructorDashboard : ComponentActivity() {
         val textview = findViewById<TextView>(R.id.welcomeMsg)
         val intent = intent
         val msg = intent.getStringExtra("name")
-        textview.text = "Hi, " + msg + "!"
+        textview.text = "Prof. " + msg
 
-        // Assuming you have a list of user reviews called "userReviews"
-        val userReviews = mutableListOf(
-            UserReview("User1", "Professor A", 4.0, "Great professor!"),
-            UserReview("User2", "Professor B", 5.0, "Excellent teaching skills."),
-            UserReview("User3", "Professor C", 2.5, "Average class experience.")
-        )
+        // Show a dialog with the welcome message
+        showWelcomeDialog(msg ?: "Professor")
+    }
 
-        // Iterate through the userReviews list and create CardView for each review
-//        for (review in userReviews) {
-//            val cardView = layoutInflater.inflate(R.layout.cardview_item, null) as CardView
-//
-//            // Set text in the CardView elements
-//            cardView.usernameTextView.text = review.userName
-//            cardView.professorNameTextView.text = review.professorName
-//            cardView.ratingBar.rating = review.rating.toFloat()
-//            cardView.reviewTextView.text = review.reviewText
-//
-//            // Add the CardView to your layout
-//            cardContainer.addView(cardView)
-//        }
+    private fun showWelcomeDialog(name: String) {
+        // Inflating a custom layout for the dialog
+        val dialogView = layoutInflater.inflate(R.layout.instructor_dialog_welcome_custom, null)
 
-        // make bottom menu reusable
-//        val dashboardButton = findViewById<ImageView>()
+        // Creating a transparent background dialog
+        val dialog = AlertDialog.Builder(this, R.style.TransparentDialog)
+            .setView(dialogView)
+            .create()
+
+        // Setting up dialog content and behavior
+        dialogView.findViewById<TextView>(R.id.welcomeMessage).text = "Welcome, $name!"
+        dialogView.findViewById<Button>(R.id.yesButton).setOnClickListener {
+            dialog.dismiss()
+        }
+
+        // Centering the dialog both horizontally and vertically
+        val window = dialog.window
+        val params = window?.attributes
+        params?.gravity = Gravity.CENTER_HORIZONTAL or Gravity.CENTER_VERTICAL
+        window?.attributes = params
+
+        // Showing the dialog
+        dialog.show()
     }
 }

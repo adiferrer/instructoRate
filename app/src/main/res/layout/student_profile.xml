@@ -7,6 +7,137 @@
     tools:ignore="MissingDefaultResource"
     android:background="@color/backgroundColor">
 
+    <LinearLayout
+        android:layout_width="407dp"
+        android:layout_height="670dp"
+        android:gravity="center"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="@+id/student_bottom_menu_bar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0">
+
+        <ImageView
+            android:id="@+id/avatarImageView"
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:layout_gravity="center"
+            android:scaleType="centerCrop"
+            android:src="@drawable/avatar_placeholder"
+            tools:ignore="DuplicateIds" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="vertical">
+            <!-- Name -->
+            <LinearLayout
+                android:layout_width="300dp"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:text="STUDENT NAME:"
+                    android:textColor="@color/white"></TextView>
+
+                <TextView
+                    android:id="@+id/student_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Juan Delos Santos"
+                    android:textColor="@color/white"
+                    android:textStyle="bold"></TextView>
+            </LinearLayout>
+
+            <!-- Course -->
+            <LinearLayout
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="7dp">
+
+                <TextView
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:text="COURSE:"
+                    android:textColor="@color/white"></TextView>
+
+                <TextView
+                    android:id="@+id/student_course"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="BSIT - ERP"
+                    android:textColor="@color/white"
+                    android:textStyle="bold"></TextView>
+            </LinearLayout>
+
+            <!-- Year Level -->
+            <LinearLayout
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="7dp">
+
+                <TextView
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:text="YEAR LEVEL:"
+                    android:textColor="@color/white"></TextView>
+
+                <TextView
+                    android:id="@+id/student_year"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="2 - Irregular"
+                    android:textColor="@color/white"
+                    android:textStyle="bold"></TextView>
+            </LinearLayout>
+
+            <!-- Status -->
+            <LinearLayout
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="7dp">
+
+                <TextView
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:text="STATUS:"
+                    android:textColor="@color/white"></TextView>
+
+                <TextView
+                    android:id="@+id/student_status"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Enrolled"
+                    android:textColor="@color/white"
+                    android:textStyle="bold"></TextView>
+            </LinearLayout>
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp"
+                android:padding="10dp"
+                android:background="@drawable/rounded_button_secondary"
+                android:elevation="4dp"
+                android:text="Request Info Change"
+                android:textColor="@color/darkTextColor"
+                android:textSize="13dp"
+                android:textStyle="bold"
+                app:backgroundTint="#E7E7E7"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.498"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.679" />
+        </LinearLayout>
+    </LinearLayout>
+
     <com.example.instructorate.StudentBottomMenuBar
         android:id="@+id/student_bottom_menu_bar"
         android:layout_width="0dp"

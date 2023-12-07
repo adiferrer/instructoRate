@@ -14,7 +14,8 @@
         app:layout_behavior="@string/appbar_scrolling_view_behavior"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent">
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0">
 
         <androidx.cardview.widget.CardView
             android:id="@+id/cardView1"
@@ -127,12 +128,12 @@
                         android:layout_marginTop="8sp"
                         android:background="@drawable/rounded_rectangle"
                         android:ems="10"
+                        android:enabled="false"
+                        android:inputType="none"
                         android:paddingStart="8sp"
                         android:text="Auto-filled with course"
                         android:textColor="@color/darkTextColor"
                         android:textSize="16sp"
-                        android:inputType="none"
-                        android:enabled="false"
                         app:layout_constraintBottom_toBottomOf="parent"
                         app:layout_constraintEnd_toEndOf="parent"
                         app:layout_constraintHorizontal_bias="0.502"
@@ -213,7 +214,7 @@
                             android:numStars="5"
                             android:progressBackgroundTint="@color/white"
                             android:progressTint="@color/filledStarColor"
-                            android:rating="2.5"
+                            android:rating="0"
                             android:scaleX="0.5"
                             android:scaleY="0.5"
                             android:stepSize="0.5" />
@@ -243,7 +244,7 @@
                             android:numStars="5"
                             android:progressBackgroundTint="@color/white"
                             android:progressTint="@color/filledStarColor"
-                            android:rating="2.5"
+                            android:rating="0"
                             android:scaleX="0.5"
                             android:scaleY="0.5"
                             android:stepSize="0.5" />
@@ -273,7 +274,7 @@
                             android:numStars="5"
                             android:progressBackgroundTint="@color/white"
                             android:progressTint="@color/filledStarColor"
-                            android:rating="2.5"
+                            android:rating="0"
                             android:scaleX="0.5"
                             android:scaleY="0.5"
                             android:stepSize="0.5" />
@@ -303,7 +304,7 @@
                             android:numStars="5"
                             android:progressBackgroundTint="@color/white"
                             android:progressTint="@color/filledStarColor"
-                            android:rating="2.5"
+                            android:rating="0"
                             android:scaleX="0.5"
                             android:scaleY="0.5"
                             android:stepSize="0.5" />
