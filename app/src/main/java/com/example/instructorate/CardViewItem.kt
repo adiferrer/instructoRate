@@ -5,6 +5,6 @@ data class CardViewItem(
     val professorName: String,
     val rating: Float,
     val reviewText: String,
-    val avatarResId: Int // Assuming you have avatar resource ID
+    val avatarResId: Int = R.drawable.avatar_placeholder
 )
 

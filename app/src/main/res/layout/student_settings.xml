@@ -26,7 +26,7 @@
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
                 android:text="SETTINGS"
-                android:textSize="20dp"
+                android:textSize="25dp"
                 android:textStyle="bold"
                 android:textColor="@color/white"></TextView>
 
@@ -36,7 +36,8 @@
                 android:layout_gravity="center"
                 android:text="Change Password"
                 android:layout_marginTop="5dp"
-                android:textColor="@color/white"></TextView>
+                android:textColor="@color/white"
+                android:textSize="17dp"></TextView>
 
             <TextView
                 android:layout_width="wrap_content"
@@ -44,7 +45,8 @@
                 android:layout_gravity="center"
                 android:layout_marginTop="5dp"
                 android:text="Help"
-                android:textColor="@color/white"></TextView>
+                android:textColor="@color/white"
+                android:textSize="17dp"></TextView>
 
             <TextView
                 android:layout_width="wrap_content"
@@ -52,7 +54,8 @@
                 android:layout_gravity="center"
                 android:layout_marginTop="5dp"
                 android:text="Report a Problem"
-                android:textColor="@color/white"></TextView>
+                android:textColor="@color/white"
+                android:textSize="17dp"></TextView>
 
             <Button
                 android:id="@+id/student_logout_btn"
@@ -62,6 +65,7 @@
                 android:layout_marginTop="10dp"
                 android:background="@drawable/rounded_button_secondary"
                 android:elevation="4dp"
+                android:textSize="15dp"
                 android:text="LOG OUT"
                 android:textColor="@color/darkTextColor"
                 android:textStyle="bold"

@@ -9,7 +9,20 @@ import androidx.recyclerview.widget.RecyclerView
 class StudentReviews : AppCompatActivity() {
 
     companion object {
-        private val reviewsList = mutableListOf<CardViewItem>()
+        private val reviewsList = mutableListOf(
+            CardViewItem(
+                username = "User3456 (You)",
+                professorName = "Professor A",
+                rating = 4.5f,
+                "A great professor!"
+            ),
+            CardViewItem(
+                username = "User3456 (You)",
+                professorName = "Professor B",
+                rating = 3.0f,
+                "Good teaching style."
+            )
+        )
 
         fun addReview(review: CardViewItem) {
             reviewsList.add(review)
